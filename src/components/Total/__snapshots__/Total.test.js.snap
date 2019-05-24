@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Summary Section renders with enzyme 1`] = `
+<div
+  className="summary__total"
+>
+  <div
+    className="summary__total__label"
+  >
+    Your Price: 
+  </div>
+  <div
+    className="summary__total__value"
+  >
+    $3,550.98
+  </div>
+</div>
+`;

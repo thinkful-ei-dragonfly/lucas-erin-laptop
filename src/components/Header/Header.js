@@ -1,7 +1,6 @@
 import React from 'react';
 
 function Header(){
-  console.log('log from Header')
   return (
     <header>
           <h1>ELF Computing</h1>
@@ -12,4 +11,3 @@ function Header(){
 }
 
 export default Header;
-

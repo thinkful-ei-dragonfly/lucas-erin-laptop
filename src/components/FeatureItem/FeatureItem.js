@@ -1,15 +1,11 @@
 import React from 'react';
 
-
-
 function Features(props){
-  console.log(props.features)
   const featureItems = props.features.map(item => {
-    debugger;
     return (
-      <div key={props.key} className={item.props.className}>
+      <div key={item.key} className={item.props.className}>
         <div className='feature__name'>{item.key}</div>
-        <ul classname='feature__list'>
+        <ul className='feature__list'>
           {item.props.children[1].props.children}
         </ul>
       </div>

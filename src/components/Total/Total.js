@@ -2,7 +2,6 @@ import React from 'react';
 import './Total.css'
 
 function Total(props){
-  console.log('log from Total')
   return (
     <div className="summary__total">
       <div className="summary__total__label">Your Price: </div>
