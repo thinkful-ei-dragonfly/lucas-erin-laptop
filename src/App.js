@@ -46,7 +46,7 @@ class App extends Component {
         </div>)
 
     const total = Object.keys(this.state.selected)
-          .reduce((acc, curr) => acc + this.state.selected[curr].cost, 0);    
+          .reduce((acc, curr) => acc + this.state.selected[curr].cost, 0);
 
 
     const features = Object.keys(this.props.features)
@@ -56,7 +56,7 @@ class App extends Component {
               const featureClass = 'feature__option ' + selectedClass;
               return <li key={index} className="feature__item">
                 <div className={featureClass}
-                  
+
                   onClick={e => this.updateFeature(key, item)}>
                     { item.name }
                     ({ new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD'})
@@ -71,23 +71,32 @@ class App extends Component {
                 { options }
               </ul>
             </div>
-          });      
+          });
 
     return (
       <div className="App">
+        {/* Header component. No props needed*/}
         <header>
           <h1>ELF Computing</h1>
           <h3>Laptops</h3>
-          <h5>Customize your laptop</h5>  
-        </header>      
+          <h5>Customize your laptop</h5>
+        </header>
+
         <main>
+          {/* Tech Specs form component */}
           <section className="main__form">
             <h3>TECH SPECS AND CUSTOMIZATIONS</h3>
+            {/* Inside of tech specs form Component
+                we'll map over list of hardware features.
+                Features are array of options, so we'll display those*/}
             { features }
           </section>
+          {/* Summary component */}
           <section className="main__summary">
             <h3>NEW GREENLEAF 2018</h3>
+            {/* selected component */}
             {summary}
+            {/* Total component */}
             <div className="summary__total">
               <div className="summary__total__label">Your Price: </div>
               <div className="summary__total__value">
@@ -102,4 +111,4 @@ class App extends Component {
   }
 }
 
-export default App;  
+export default App;
