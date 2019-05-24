@@ -1,10 +1,15 @@
 import React, { Component } from 'react';
+import Header from './components/Header/Header';
+import TechSpecs from './components/TechSpecs/TechSpecs';
+import Summary from './components/Summary/Summary';
+import STORE from './STORE';
 import './App.css';
 
 class App extends Component {
   constructor(props){
     super(props);
     this.state = {
+      store: STORE,
       selected: {
         Processor: {
             name: '17th Generation Intel Core HB (7 Core with donut spare)',
@@ -49,9 +54,9 @@ class App extends Component {
           .reduce((acc, curr) => acc + this.state.selected[curr].cost, 0);
 
 
-    const features = Object.keys(this.props.features)
+    const features = Object.keys(this.state.store)
           .map(key => {
-            const options = this.props.features[key].map((item, index) => {
+            const options = this.state.store[key].map((item, index) => {
               const selectedClass = item.name === this.state.selected[key].name ? 'feature__selected' : '';
               const featureClass = 'feature__option ' + selectedClass;
               return <li key={index} className="feature__item">
@@ -75,36 +80,10 @@ class App extends Component {
 
     return (
       <div className="App">
-        {/* Header component. No props needed*/}
-        <header>
-          <h1>ELF Computing</h1>
-          <h3>Laptops</h3>
-          <h5>Customize your laptop</h5>
-        </header>
-
+        <Header />
         <main>
-          {/* Tech Specs form component */}
-          <section className="main__form">
-            <h3>TECH SPECS AND CUSTOMIZATIONS</h3>
-            {/* Inside of tech specs form Component
-                we'll map over list of hardware features.
-                Features are array of options, so we'll display those*/}
-            { features }
-          </section>
-          {/* Summary component */}
-          <section className="main__summary">
-            <h3>NEW GREENLEAF 2018</h3>
-            {/* selected component */}
-            {summary}
-            {/* Total component */}
-            <div className="summary__total">
-              <div className="summary__total__label">Your Price: </div>
-              <div className="summary__total__value">
-              { new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD'})
-                  .format(total) }
-              </div>
-            </div>
-          </section>
+          <TechSpecs features={features}/>
+          <Summary summary={summary} total={total}/>
         </main>
       </div>
     );
