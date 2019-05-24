@@ -31,7 +31,7 @@ class App extends Component {
     }
   }
 
-  updateFeature(feature, newValue) {
+  updateFeature(feature, newValue){
     const selected = Object.assign({}, this.state.selected);
     selected[feature] = newValue;
     this.setState({
@@ -82,7 +82,7 @@ class App extends Component {
       <div className="App">
         <Header />
         <main>
-          <TechSpecs features={features}/>
+          <TechSpecs onUpdate={this.updateFeature} features={features}/>
           <Summary summary={summary} total={total}/>
         </main>
       </div>

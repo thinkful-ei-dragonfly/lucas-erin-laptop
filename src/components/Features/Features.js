@@ -1,8 +1,12 @@
 import React from 'react';
+import './Features.css'
+import FeatureItem from '../FeatureItem/FeatureItem'
 
 function Features(props){
-  console.log('log from Features')
-  return <div>{props.features}</div>
+  return (
+    <div>
+      <FeatureItem features={props.features}/>
+    </div>)
 }
 
 export default Features;

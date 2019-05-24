@@ -1,4 +1,5 @@
 import React from 'react';
+import './Total.css'
 
 function Total(props){
   console.log('log from Total')

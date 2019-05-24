@@ -1,0 +1,261 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App component renders with enzyme 1`] = `
+<div
+  className="App"
+>
+  <Header />
+  <main>
+    <TechSpecs
+      features={
+        Array [
+          <div
+            className="feature"
+          >
+            <div
+              className="feature__name"
+            >
+              Processor
+            </div>
+            <ul
+              className="feature__list"
+            >
+              <li
+                className="feature__item"
+              >
+                <div
+                  className="feature__option feature__selected"
+                  onClick={[Function]}
+                >
+                  17th Generation Intel Core HB (7 Core with donut spare)
+                  (
+                  $700.00
+                  )
+                </div>
+              </li>
+              <li
+                className="feature__item"
+              >
+                <div
+                  className="feature__option "
+                  onClick={[Function]}
+                >
+                  Professor X AMD Fire Breather with sidewinder technology
+                  (
+                  $1,200.00
+                  )
+                </div>
+              </li>
+            </ul>
+          </div>,
+          <div
+            className="feature"
+          >
+            <div
+              className="feature__name"
+            >
+              Operating System
+            </div>
+            <ul
+              className="feature__list"
+            >
+              <li
+                className="feature__item"
+              >
+                <div
+                  className="feature__option feature__selected"
+                  onClick={[Function]}
+                >
+                  Ubuntu Linux 16.04
+                  (
+                  $200.00
+                  )
+                </div>
+              </li>
+              <li
+                className="feature__item"
+              >
+                <div
+                  className="feature__option "
+                  onClick={[Function]}
+                >
+                  Bodhi Linux
+                  (
+                  $300.00
+                  )
+                </div>
+              </li>
+            </ul>
+          </div>,
+          <div
+            className="feature"
+          >
+            <div
+              className="feature__name"
+            >
+              Video Card
+            </div>
+            <ul
+              className="feature__list"
+            >
+              <li
+                className="feature__item"
+              >
+                <div
+                  className="feature__option feature__selected"
+                  onClick={[Function]}
+                >
+                  Toyota Corolla 1.5v
+                  (
+                  $1,150.98
+                  )
+                </div>
+              </li>
+              <li
+                className="feature__item"
+              >
+                <div
+                  className="feature__option "
+                  onClick={[Function]}
+                >
+                  Mind mild breeze 2000
+                  (
+                  $1,345.00
+                  )
+                </div>
+              </li>
+            </ul>
+          </div>,
+          <div
+            className="feature"
+          >
+            <div
+              className="feature__name"
+            >
+              Display
+            </div>
+            <ul
+              className="feature__list"
+            >
+              <li
+                className="feature__item"
+              >
+                <div
+                  className="feature__option feature__selected"
+                  onClick={[Function]}
+                >
+                  15.6" UHD (3840 x 2160) 60Hz Bright Lights and Knobs
+                  (
+                  $1,500.00
+                  )
+                </div>
+              </li>
+              <li
+                className="feature__item"
+              >
+                <div
+                  className="feature__option "
+                  onClick={[Function]}
+                >
+                  15.3" HGTV (3840 x 2160) Home makeover edition
+                  (
+                  $1,400.00
+                  )
+                </div>
+              </li>
+            </ul>
+          </div>,
+        ]
+      }
+      onUpdate={[Function]}
+    />
+    <Summary
+      summary={
+        Array [
+          <div
+            className="summary__option"
+          >
+            <div
+              className="summary__option__label"
+            >
+              Processor
+                
+            </div>
+            <div
+              className="summary__option__value"
+            >
+              17th Generation Intel Core HB (7 Core with donut spare)
+            </div>
+            <div
+              className="summary__option__cost"
+            >
+              $700.00
+            </div>
+          </div>,
+          <div
+            className="summary__option"
+          >
+            <div
+              className="summary__option__label"
+            >
+              Operating System
+                
+            </div>
+            <div
+              className="summary__option__value"
+            >
+              Ubuntu Linux 16.04
+            </div>
+            <div
+              className="summary__option__cost"
+            >
+              $200.00
+            </div>
+          </div>,
+          <div
+            className="summary__option"
+          >
+            <div
+              className="summary__option__label"
+            >
+              Video Card
+                
+            </div>
+            <div
+              className="summary__option__value"
+            >
+              Toyota Corolla 1.5v
+            </div>
+            <div
+              className="summary__option__cost"
+            >
+              $1,150.98
+            </div>
+          </div>,
+          <div
+            className="summary__option"
+          >
+            <div
+              className="summary__option__label"
+            >
+              Display
+                
+            </div>
+            <div
+              className="summary__option__value"
+            >
+              15.6" UHD (3840 x 2160) 60Hz Bright Lights and Knobs
+            </div>
+            <div
+              className="summary__option__cost"
+            >
+              $1,500.00
+            </div>
+          </div>,
+        ]
+      }
+      total={3550.98}
+    />
+  </main>
+</div>
+`;
